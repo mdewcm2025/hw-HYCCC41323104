@@ -27,7 +27,39 @@
 <p style="padding-left: 90px;">設法將 <a href="https://mde.tw/reeborg/world.html">Reeborg's world</a> (<a href="https://github.com/mdecycu/reeborg">原始碼</a>) 與 cmsimde 網際內容管理系統整合</p>
 <h1>w1</h1>
 <h4><span>git 指令與 github 倉儲練習:</span></h4>
-<p>以下練習將利用電腦輔助設計室中 C: 既有的可攜程式環境<span style="color: #ff99cc;">(要用portable_wcm2025裡的start.bat)</span>, 在近端建立一個 git 倉儲, 然後與 Github 上空白的倉儲進行對應. 完成後使用者可在多個地點將 Github 上的倉儲以<span style="background-color: #ff99cc;"> git clone</span> (可以把老師檔案裡的倉儲內容複製到我新建的倉儲) 取下進行改版. 當近端某一舊倉儲版本落後 Github 上倉儲版本時, 則可利用 git pull 取下遠端新增的版本資料後繼續改版. 完成後再新增提交推送至 Github 倉儲.</p><h1>Task</h1>
+<p>以下練習將利用電腦輔助設計室中 C: 既有的可攜程式環境<span style="color: #00ccff;">(要用portable_wcm2025裡的start.bat)</span>, 在近端建立一個 git 倉儲, 然後與 Github 上空白的倉儲進行對應. 完成後使用者可在多個地點將 Github 上的倉儲以 "<span style="background-color: #ffffff;"> git clone"</span> (可以把老師檔案裡的倉儲內容複製到我新建的倉儲) 取下進行改版. 當近端某一舊倉儲版本落後 Github 上倉儲版本時, 則可利用 git pull 取下遠端新增的版本資料後繼續改版. 完成後再新增提交推送至 Github 倉儲.</p>
+<p>練習步驟:</p>
+<p>點選自己的usb裡的<span>portable_wcm2025</span>中舊版的可攜程式中的 <span>start.bat</span></p>
+<p>啟動之後, 在其中一個命令列式視窗中執行下列指令:</p>
+<div>
+<div class="syntaxhighlighter js" id="highlighter_816227">
+<table border="0" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td class="gutter">
+<div class="line number1 index0 alt2">1</div>
+<div class="line number2 index1 alt1">2</div>
+<div class="line number3 index2 alt2">3</div>
+<div class="line number4 index3 alt1">4</div>
+</td>
+<td class="code">
+<div class="container">
+<div class="line number1 index0 alt2"><code class="js plain">Y:\&gt;cd tmp</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">Y:\tmp&gt;mkdir w1</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">Y:\tmp&gt;cd w1</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">Y:\tmp\w1&gt;git init</code></div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>上列指令第一行"cd tmp"是利用 <span style="color: #00ccff;">cd </span> (更換目錄指令) , 將工作目錄<span style="color: #00ccff;">從 Y 槽的根目錄更換到 tmp 目錄</span>, cd 是<strong> change directory</strong> 的意思</p>
+<p>第二行 "mkdir w1"則利用<span style="color: #00ccff;"> mkdir</span> (<span>建立目錄) </span>建立 w1 目錄, mkdir 是 <strong>make directory</strong> 的意思</p>
+<p>第三行" cd w1" 再利用 cd 將目錄更換到 w1</p>
+<p>第四行則在 w1 目錄中執行<span style="color: #00ccff;"> git init</span> 指令, 表示已經可以在可攜程式搜尋路徑中執行 portablegit 中的 git.exe, 並要求執行 init, 也就是 initialize 的意思, 將此目錄(w1) 作為起始作為 git 倉儲, 執行 git init 之後, git 會在 w1 目錄中建立一個 .git 目錄(<strong><span style="color: #ff9900;">要記得在顯示中打開隱藏的檔案</span></strong>), 其中帶有 git 所需的設定檔案, 與存放版本資料的資料架構.</p>
+<p></p><h1>Task</h1>
 <h2>task1</h2>
 <h4>自行製作<span style="color: #ff00ff;">可攜程式</span>系統</h4>
 <h4><span style="color: #ff00ff;">可攜程式<span style="color: #000000;">就是可以下載在usb裡隨時打開就可以打程式的地方。</span></span></h4>
