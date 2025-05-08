@@ -60,6 +60,12 @@
 <p>第三行" cd w1" 再利用 cd 將目錄更換到 w1</p>
 <p>第四行則在 w1 目錄中執行<span style="color: #00ccff;"> git init</span> 指令, 表示已經可以在可攜程式搜尋路徑中執行 portablegit 中的 git.exe, 並要求執行 init, 也就是 initialize 的意思, 將此目錄(w1) 作為起始作為 git 倉儲, 執行 git init 之後, git 會在 w1 目錄中建立一個 .git 目錄(<strong><span style="color: #ff9900;">要記得在顯示中打開隱藏的檔案</span></strong>), 其中帶有 git 所需的設定檔案, 與存放版本資料的資料架構.</p>
 <p><img alt="" height="33" src="/images/.git.png" width="502"/></p>
+<p>註記使用者的帳號與電子郵箱, 也還沒有設定推送的目的地, 因此先在可攜系統中設定使用者帳號:</p>
+<p>git config --global <span style="color: #33cccc;">user.name</span> "your github account" </p>
+<p>接著設定電子郵箱:</p>
+<p>git config --global <span style="color: #33cccc;">user.email</span> "your email"</p>
+<pre>name = HYCCC41323104<br/>email = <a href="mailto:linsdaughtermia@gmail.com">linsdaughtermia@gmail.com</a> <img alt="tongue-out" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-tongue-out.gif"/><br/><br/><br/></pre>
+<p></p>
 <p></p><h1>Task</h1>
 <h2>task1</h2>
 <h4>自行製作<span style="color: #ff00ff;">可攜程式</span>系統</h4>
