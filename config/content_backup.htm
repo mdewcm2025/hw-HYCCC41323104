@@ -46,8 +46,8 @@
 <td class="code">
 <div class="container">
 <div class="line number1 index0 alt2"><code class="js plain">Y:\&gt;cd tmp</code></div>
-<div class="line number2 index1 alt1"><code class="js plain">Y:\tmp&gt;mkdir w1</code></div>
-<div class="line number3 index2 alt2"><code class="js plain">Y:\tmp&gt;cd w1</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">Y:\tmp&gt;mkdir 2</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">Y:\tmp&gt;cd 2</code></div>
 <div class="line number4 index3 alt1"><code class="js plain">Y:\tmp\w1&gt;git init</code></div>
 </div>
 </td>
@@ -58,17 +58,29 @@
 </div>
 <p>上列指令第一行"cd tmp"是利用 <span style="color: #00ccff;">cd </span> (更換目錄指令) , 將工作目錄<span style="color: #00ccff;">從 Y 槽的根目錄更換到 tmp 目錄</span>, cd 是<strong> change directory</strong> 的意思</p>
 <p>第二行 "mkdir w1"則利用<span style="color: #00ccff;"> mkdir</span> (<span>建立目錄) </span>建立 w1 目錄, mkdir 是 <strong>make directory</strong> 的意思</p>
-<p>第三行" cd w1" 再利用 cd 將目錄更換到 w1</p>
-<p>第四行則在 w1 目錄中執行<span style="color: #00ccff;"> git init</span> 指令, 表示已經可以在可攜程式搜尋路徑中執行 portablegit 中的 git.exe, 並要求執行 init, 也就是 initialize 的意思, 將此目錄(w1) 作為起始作為 git 倉儲, 執行 git init 之後, git 會在 w1 目錄中建立一個 .git 目錄(<strong><span style="color: #ff9900;">要記得在顯示中打開隱藏的檔案</span></strong>), 其中帶有 git 所需的設定檔案, 與存放版本資料的資料架構.</p>
+<p>第三行" cd w1" 再利用 cd 將目錄更換到 2</p>
+<p>第四行則在 w1 目錄中執行<span style="color: #00ccff;"> git init</span> 指令, 表示已經可以在可攜程式搜尋路徑中執行 portablegit 中的 git.exe, 並要求執行 init, 也就是 initialize 的意思, 將此目錄(2)作為起始作為 git 倉儲, 執行 git init 之後, git 會在 2 目錄中建立一個 .git 目錄(<strong><span style="color: #ff9900;">要記得在顯示中打開隱藏的檔案</span></strong>), 其中帶有 git 所需的設定檔案, 與存放版本資料的資料架構.</p>
 <p><strong>步</strong><strong>驟二:</strong></p>
 <p>註記使用者的帳號與電子郵箱, 也還沒有設定推送的目的地, 因此先在可攜系統中設定使用者帳號:</p>
 <p>git config --global <span style="color: #33cccc;">user.name</span> "your github account" </p>
 <p>接著設定電子郵箱:</p>
 <p>git config --global <span style="color: #33cccc;">user.email</span> "your email"</p>
-<pre>name = HYCCC41323104<br/>email = <a href="mailto:linsdaughtermia@gmail.com">linsdaughtermia@gmail.com</a> <img alt="tongue-out" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-tongue-out.gif"/><br/><strong>步驟三:<br/></strong>在<span>先登入 github.com, 然後建立一個完全空白的倉儲。<br/></span>建立倉儲的方法:<br/><img alt="" height="117" src="/images/github.jpg" width="541"/><br/><br/>1.點圖片中github中網頁裡的右上角的加號，點選new repository 可以新建新的倉儲 <br/><img alt="" height="213" src="/images/螢幕擷取畫面 2025-05-08 113705.jpg" width="479"/><br/><br/><img alt="" height="209" src="/images/螢幕擷取畫面 2025-05-08 113716.jpg" width="482"/></pre>
-<p>先設定好要新建的倉儲名字，其餘所有選項都不用更改，然後點右下角的create repository。</p>
-<p></p>
-<p></p><h1>Task</h1>
+<pre>name = HYCCC41323104<br/>email = <a href="mailto:linsdaughtermia@gmail.com">linsdaughtermia@gmail.com</a> <img alt="tongue-out" src="/static/tinymce4/tinymce/plugins/emoticons/img/smiley-tongue-out.gif"/><br/><strong>步驟三:<br/></strong>在<span>先登入 github.com, 然後建立一個完全空白的倉儲。<br/></span>建立倉儲的方法:</pre>
+<pre>1.點圖片中github中網頁裡的右上角的加號，點選new repository 可以新建新的倉儲</pre>
+<pre><br/><img alt="" height="117" src="/images/github.jpg" width="541"/><br/><br/>2.然後進去之後網頁就會像下面這張圖一樣，在repository name 的地方填新建的倉儲名稱，下面的Description可以填關於倉儲的附註。<br/>其餘所有選項都不用更改，然後點右下角的create repository。</pre>
+<pre><br/><img alt="" height="259" src="/images/螢幕擷取畫面 2025-05-08 113705.jpg" width="582"/><br/><br/><img alt="" height="253" src="/images/螢幕擷取畫面 2025-05-08 113716.jpg" width="584"/></pre>
+<p>3.接下來，會進到這個網頁</p>
+<p><img alt="" height="389" src="/images/chrome_7tbXfbCrJg.jpg" width="595"/></p>
+<p>4.記得先去把portable_wcm2025的home_ipv6裡的.gitconfig拉進白色的，改得跟下圖一樣。</p>
+<p><img alt="" height="209" src="/images/explorer_wHkRaj62jc.jpg" width="597"/></p>
+<p>5.回到近端，因為一開始已經建立了目錄2，所以只要在可攜程式中輸入:</p>
+<pre class="copyable-terminal-content f5"><span class="user-select-contain">echo "# 2" &gt;&gt; README.md</span>
+<span class="user-select-contain">git add README.md</span>
+<span class="user-select-contain">git commit -m "first commit"</span>
+<span class="user-select-contain">git branch -M main</span>
+<span class="user-select-contain">git remote add origin <span data-targets="git-clone-help.helpTexts">git@<span>HYCCC41323104</span>:HYCCC41323104/2.git</span></span>
+<span class="user-select-contain mb-0">git push -u origin main<br/>(要把</span><span class="user-select-contain"><span data-targets="git-clone-help.helpTexts">github.com換成自己的github的帳號)</span></span></pre>
+<pre class="copyable-terminal-content f5" id="empty-setup-new-repo-echo"><span class="user-select-contain mb-0"><br/><br/><br/></span></pre><h1>Task</h1>
 <h2>task1</h2>
 <h4>自行製作<span style="color: #ff00ff;">可攜程式</span>系統</h4>
 <h4><span style="color: #ff00ff;">可攜程式<span style="color: #000000;">就是可以下載在usb裡隨時打開就可以打程式的地方。</span></span></h4>
