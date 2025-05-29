@@ -79,7 +79,117 @@
 <pre class="copyable-terminal-content f5" id="empty-setup-new-repo-echo"><span class="user-select-contain mb-0"><br/><br/><br/></span></pre>
 <h2>nginx</h2>
 <h2>IPV6</h2>
-<h1>Task</h1>
+<p><strong>方法一：手動設定 IPv6 與 Proxy</strong></p>
+<p><strong>一、設定 IPv6</strong></p>
+<ol start="1">
+<li style="text-align: left;">
+<p>開啟 控制台</p>
+</li>
+<li style="text-align: left;">
+<p>將右上角的「檢視方式」改為 類別</p>
+</li>
+<li style="text-align: left;">
+<p>點選 網路和網際網路</p>
+</li>
+<li style="text-align: left;">
+<p>點選 網路和共用中心</p>
+</li>
+<li style="text-align: left;">
+<p>點選左側 變更介面卡設定</p>
+</li>
+<li style="text-align: left;">
+<p>對「乙太網路 2」點兩下 (第一個)</p>
+</li>
+<li style="text-align: left;">
+<p>點選 內容</p>
+</li>
+<li style="text-align: left;">
+<p>選取「網際網路通訊協定第6版 (TCP/IPv6)」，再點選 內容</p>
+</li>
+<li style="text-align: left;">
+<p>勾選 使用下列 IPv6 位址 (U)，並填入以下資料：</p>
+<ul>
+<li>
+<p>IPv6 位址：<span style="color: #ff00ff;">2001:288:6004:17:fff1:cc25:<wbr/>0000:a023</span></p>
+</li>
+<li>
+<p>子網路前綴長度：<span style="color: #ffcc00;">64</span></p>
+</li>
+<li>
+<p>閘道：<span style="color: #ff00ff;">2001:288:6004:17::254</span></p>
+</li>
+</ul>
+<p></p>
+</li>
+<li>
+<p style="text-align: left;">DNS 伺服器地址如下：</p>
+<ul style="text-align: left;">
+<li>
+<p>優先 DNS：<span style="color: #ff00ff;">2001:288:6004:17::3</span></p>
+</li>
+<li>
+<p>備用 DNS：<span style="color: #ff00ff;">2001:b000:168::1</span></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>二、設定 Proxy（使用 GitHub 時必須）</strong></p>
+<ol start="1">
+<li>
+<p>開啟 設定</p>
+</li>
+<li>
+<p>點選 網路和網際網路</p>
+</li>
+<li>
+<p>點選 Proxy</p>
+</li>
+<li>
+<p>關閉「自動 Proxy 設定」</p>
+</li>
+<li>
+<p>開啟「手動 Proxy 設定」，點選 編輯</p>
+</li>
+<li>
+<p>輸入以下資料：</p>
+<ul>
+<li>
+<p>位址：<span style="color: #00ccff;"><a data-saferedirecturl="https://www.google.com/url?q=http://p4.cycu.org&amp;source=gmail&amp;ust=1748574568094000&amp;usg=AOvVaw0dm9hRRmBjX_mBeXIl7jYZ" href="http://p4.cycu.org/" style="color: #00ccff;" target="_blank">p4.cycu.org</a></span></p>
+</li>
+<li>
+<p>連接埠：<span style="color: #00ccff;">3128</span></p>
+</li>
+<li>
+<p>不使用 Proxy 的位址：<span style="color: #00ccff;">*.local</span></p>
+</li>
+<li><span color="#00ccff" style="color: #00ccff;">下面要打勾</span></li>
+</ul>
+</li>
+</ol>
+<p><strong>方法二：使用 USB 安裝批次檔自動設定</strong></p>
+<ol start="1">
+<li>
+<p>將包含 IPV6_setup 資料夾的 USB 插入電腦</p>
+</li>
+<li>
+<p>找到 1_ipv6_network_setup.bat 檔案</p>
+</li>
+<li>
+<p>右鍵點擊，選擇「以系統管理員身分執行」</p>
+</li>
+<li>
+<p>執行完畢後，仍需確認 IPv6 設定正確，並依需求設定 Proxy（如使用 GitHub)</p>
+<p>*<span style="color: #ff0000;">注意事項</span></p>
+<ul>
+<li>
+<p>硬碟名稱請<span style="color: #ff0000;">勿包含空格</span>，否則可能<span style="color: #ff0000;">導致批次檔執行失敗</span>。</p>
+</li>
+<li>
+<p>本設定僅適用於<span style="color: #00ccff;">機械設計系</span>所配給之電腦，其他裝置無法使用。</p>
+</li>
+</ul>
+</li>
+</ol><h1>Task</h1>
 <h2>task1</h2>
 <h4>自行製作<span style="color: #ff00ff;">可攜程式</span>系統</h4>
 <h4><span style="color: #ff00ff;">可攜程式<span style="color: #000000;">就是可以下載在usb裡隨時打開就可以打程式的地方。</span></span></h4>
