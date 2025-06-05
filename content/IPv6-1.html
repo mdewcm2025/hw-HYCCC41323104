@@ -2,7 +2,7 @@
         <head>
         <title>wcm_hw</title>
         <meta charset="utf-8">
-<meta property="head" content="H3">
+<meta property="head" content="H2">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/css/bootstrap.min.css">
@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li class='has-children'><a href='Note.html'>Note</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='nginx.html'>nginx</a><li><a href='ipv6.html'>ipv6</a></li></ul><li class='has-children'><a href='Task.html'>Task</a><ul class='dropdown'><li><a href='task1.html'>task1</a><li><a href='task2.html'>task2</a><li class='has-children'><a href='task2.5.html'>task2.5</a><ul class='dropdown'><li><a href='IPv6.html'>IPv6</a></li></ul><li><a href='task3.html'>task3</a><li><a href='task4.html'>task4</a></li></ul><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a></li></ul><li><a href='Midterm.html'>Midterm</a><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Note.html'>Note</a><ul class='dropdown'><li><a href='w1.html'>w1</a><li><a href='nginx.html'>nginx</a><li><a href='IPv6-1.html'>IPv6-1</a></li></ul><li class='has-children'><a href='Task.html'>Task</a><ul class='dropdown'><li><a href='task1.html'>task1</a><li><a href='task2.html'>task2</a><li class='has-children'><a href='task2.5.html'>task2.5</a><ul class='dropdown'><li><a href='IPv6-2.html'>IPv6-2</a></li></ul><li><a href='task3.html'>task3</a><li><a href='task4.html'>task4</a></li></ul><li class='has-children'><a href='Homework.html'>Homework</a><ul class='dropdown'><li><a href='HW1.html'>HW1</a><li><a href='HW2.html'>HW2</a></li></ul><li><a href='Midterm.html'>Midterm</a><li><a href='Final.html'>Final</a><li><a href='Brython.html'>Brython</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,28 +142,118 @@ img.add_border {
           </div>
           
         </header>
-    <div id="tipue_search_content">task2.5 << <a href='task2.5.html'>Previous</a> <a href='task3.html'>Next</a> >> task3<br /><h1>IPv6</h1>
-<p style="text-align: left;"><span style="color: #00ff00;">Note:</span></p>
-<p style="text-align: left;">ivp6的設定:控制台⮕控制台的檢視方式改成類別⮕選網路和網際網路⮕網路和共用中心⮕變更介面卡設定⮕乙太網路2（點兩下）⮕內容⮕網際網路通訊協定第6版（<wbr/>TCP/IPV6)⮕內容⮕使用下列IPV6位址⮕</p>
-<div>
-<div class="im">
-<p>2001:288:6004:17:fff1:cc25:<wbr/>0000:a023</p>
-<p>64</p>
-<p>2001:288:6004:17::254</p>
-<p>2001:288:6004:17::3</p>
-<p>2001:b000:168::1</p>
-</div>
-</div>
-<div>
-<p dir="auto">設定 網路和網際網路 Proxy 自動Proxy設定關掉 點選手動Proxy設定 編輯 打字</p>
-<p dir="auto"><a data-saferedirecturl="https://www.google.com/url?q=http://p4.cycu.org&amp;source=gmail&amp;ust=1747366691930000&amp;usg=AOvVaw0-XaLLzqAcn6MZ975dowMy" href="http://p4.cycu.org/" target="_blank">p4.cycu.org</a> </p>
-<p>3128</p>
-<p>*.local</p>
-<p>然後要記得最後的選項要打勾</p>
+    <div id="tipue_search_content">nginx << <a href='nginx.html'>Previous</a> <a href='Task.html'>Next</a> >> Task<br /><h1>IPv6-1</h1>
+<p><strong>方法一：手動設定 IPv6 與 Proxy</strong></p>
+<p><strong>一、設定 IPv6</strong></p>
+<ol start="1">
+<li style="text-align: left;">
+<p>開啟 控制台</p>
+</li>
+<li style="text-align: left;">
+<p>將右上角的「檢視方式」改為 類別</p>
+</li>
+<li style="text-align: left;">
+<p>點選 網路和網際網路</p>
+</li>
+<li style="text-align: left;">
+<p>點選 網路和共用中心</p>
+</li>
+<li style="text-align: left;">
+<p>點選左側 變更介面卡設定</p>
+</li>
+<li style="text-align: left;">
+<p>對「乙太網路 2」點兩下 (第一個)</p>
+</li>
+<li style="text-align: left;">
+<p>點選 內容</p>
+</li>
+<li style="text-align: left;">
+<p>選取「網際網路通訊協定第6版 (TCP/IPv6)」，再點選 內容</p>
+</li>
+<li style="text-align: left;">
+<p>勾選 使用下列 IPv6 位址 (U)，並填入以下資料：</p>
+<ul>
+<li>
+<p>IPv6 位址：<span style="color: #ff00ff;">2001:288:6004:17:fff1:cc25:<wbr/>0000:a023</span></p>
+</li>
+<li>
+<p>子網路前綴長度：<span style="color: #ffcc00;">64</span></p>
+</li>
+<li>
+<p>閘道：<span style="color: #ff00ff;">2001:288:6004:17::254</span></p>
+</li>
+</ul>
 <p></p>
-</div>
-<pre><br/><span>學員序號為23的固定 IPv6 分配: 2001:288:6004:17:fff1:cc25:0000:a023<br/>要先下載然後解壓縮 :<a href="https://mdewcm2025.github.io/hw-scrum-1/downloads/account_network_setup.7z">account_network_setup.7z<br/></a>再跟著<a href='/get_page/IPv6/&lt;iframe width="560" height="315" src="https:/www.youtube.com/embed/6YMViZXpRKQ?si=jHUOJ0I4nDsK5fVb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;'>老師的操作影片</a>操作。<br/><br/><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xmhY2GCgdSg?si=ohEwGJ0rXUp3qiz7" title="YouTube video player" width="560"></iframe><br/><br/><br/><br/>note:關於 fossil 和 SCM 要看<a href="https://mdewcm2025.github.io/hw-scrum-1/content/IPv6.html">老師網站</a>的操作影片</span></pre>
-<br />task2.5 << <a href='task2.5.html'>Previous</a> <a href='task3.html'>Next</a> >> task3</div>
+</li>
+<li>
+<p style="text-align: left;">DNS 伺服器地址如下：</p>
+<ul style="text-align: left;">
+<li>
+<p>優先 DNS：<span style="color: #ff00ff;">2001:288:6004:17::3</span></p>
+</li>
+<li>
+<p>備用 DNS：<span style="color: #ff00ff;">2001:b000:168::1</span></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><strong>二、設定 Proxy（使用 GitHub 時必須）</strong></p>
+<ol start="1">
+<li>
+<p>開啟 設定</p>
+</li>
+<li>
+<p>點選 網路和網際網路</p>
+</li>
+<li>
+<p>點選 Proxy</p>
+</li>
+<li>
+<p>關閉「自動 Proxy 設定」</p>
+</li>
+<li>
+<p>開啟「手動 Proxy 設定」，點選 編輯</p>
+</li>
+<li>
+<p>輸入以下資料：</p>
+<ul>
+<li>
+<p>位址：<span style="color: #00ccff;"><a data-saferedirecturl="https://www.google.com/url?q=http://p4.cycu.org&amp;source=gmail&amp;ust=1748574568094000&amp;usg=AOvVaw0dm9hRRmBjX_mBeXIl7jYZ" href="http://p4.cycu.org/" style="color: #00ccff;" target="_blank">p4.cycu.org</a></span></p>
+</li>
+<li>
+<p>連接埠：<span style="color: #00ccff;">3128</span></p>
+</li>
+<li>
+<p>不使用 Proxy 的位址：<span style="color: #00ccff;">*.local</span></p>
+</li>
+<li><span color="#00ccff" style="color: #00ccff;">下面要打勾</span></li>
+</ul>
+</li>
+</ol>
+<p><strong>方法二：使用 USB 安裝批次檔自動設定</strong></p>
+<ol start="1">
+<li>
+<p>將包含 IPV6_setup 資料夾的 USB 插入電腦</p>
+</li>
+<li>
+<p>找到 1_ipv6_network_setup.bat 檔案</p>
+</li>
+<li>
+<p>右鍵點擊，選擇「以系統管理員身分執行」</p>
+</li>
+<li>
+<p>執行完畢後，仍需確認 IPv6 設定正確，並依需求設定 Proxy（如使用 GitHub)</p>
+<p>*<span style="color: #ff0000;">注意事項</span></p>
+<ul>
+<li>
+<p>硬碟名稱請<span style="color: #ff0000;">勿包含空格</span>，否則可能<span style="color: #ff0000;">導致批次檔執行失敗</span>。</p>
+</li>
+<li>
+<p>本設定僅適用於<span style="color: #00ccff;">機械設計系</span>所配給之電腦，其他裝置無法使用。</p>
+</li>
+</ul>
+</li>
+</ol><br />nginx << <a href='nginx.html'>Previous</a> <a href='Task.html'>Next</a> >> Task</div>
         
     <!-- footer -->
       <div class="container">
